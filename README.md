@@ -3,8 +3,8 @@ Simple weather app where you input a city and country, and it will give you the 
 
 ## Initial Setup
 run in the terminal:
-**pip install -r requirements.txt**
+   *pip install -r requirements.txt*
 
 Then who test on local localhost simply run:
-**app.py**
+   *app.py*
 and open up provided link
