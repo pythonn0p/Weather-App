@@ -9,11 +9,8 @@ app = Flask(__name__)
 @app.route('/', methods=['GET', 'POST']) #route it simply the home page
 def index():
     data = None #ensures there is always a variable
-    if request.method == 'POST':
-        city = request.form['cityName']
-        country = request.form['countryName']
-        data = get_weather(city,country) #Need to give this data to the render template
-    return render_template('index.html', data = data)
+    data = get_weather() #Need to give this data to the render template
+    return render_template('index.html', data = data) 
 
 #If deploying change this to production application
 if __name__ == '__main__':
